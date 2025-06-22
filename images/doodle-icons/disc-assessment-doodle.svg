@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="45" height="45">
+  <!-- Quadrants -->
+  <line x1="5" y1="25" x2="45" y2="25" stroke="black" stroke-width="1.5"/>
+  <line x1="25" y1="5" x2="25" y2="45" stroke="black" stroke-width="1.5"/>
+  <!-- D - Bold Square -->
+  <rect x="10" y="10" width="10" height="10" fill="#FF8C69" rx="1"/>
+  <!-- I - Wavy Line -->
+  <path d="M30 10 C 35 5, 35 15, 40 10" stroke="#FFFACD" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M30 15 C 35 10, 35 20, 40 15" stroke="#FFFACD" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- S - Stable Circle -->
+  <circle cx="15" cy="35" r="6" fill="#C1E1C1"/>
+  <!-- C - Organized Lines -->
+  <line x1="30" y1="30" x2="40" y2="30" stroke="#AEC6CF" stroke-width="2" stroke-linecap="round"/>
+  <line x1="30" y1="35" x2="40" y2="35" stroke="#AEC6CF" stroke-width="2" stroke-linecap="round"/>
+  <line x1="30" y1="40" x2="40" y2="40" stroke="#AEC6CF" stroke-width="2" stroke-linecap="round"/>
+</svg>

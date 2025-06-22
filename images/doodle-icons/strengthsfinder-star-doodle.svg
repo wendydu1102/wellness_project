@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="45" height="45">
+  <!-- Shining Star -->
+  <path d="M25 5 L30 18 L45 20 L33 30 L37 45 L25 37 L13 45 L17 30 L5 20 L20 18 Z" fill="#FFFACD" stroke="black" stroke-width="1.5"/>
+  <!-- Smile -->
+  <path d="M20 30 Q25 33 30 30" stroke="black" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <circle cx="19" cy="26" r="1.5" fill="black"/>
+  <circle cx="31" cy="26" r="1.5" fill="black"/>
+  <!-- Sparkles -->
+  <line x1="8" y1="15" x2="12" y2="17" stroke="black" stroke-width="1" stroke-linecap="round"/>
+  <line x1="38" y1="15" x2="42" y2="17" stroke="black" stroke-width="1" stroke-linecap="round"/>
+</svg>

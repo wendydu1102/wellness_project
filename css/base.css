@@ -251,15 +251,14 @@ h3 {
     justify-content: center;
 }
 
-/* Cartoon Icon Styling Suggestion - if using inline SVGs or font icons */
-.feature-icon svg,
-.feature-icon img.cartoon-icon {
-    width: 45px;
-    height: 45px;
-    fill: #FF8C69;
-    /* Coral */
-    /* For line icons, use stroke property */
-    /* stroke: #FF8C69; */
+/* Styling for icons within .feature-icon */
+/* This will apply to both old .cartoon-icon (if any remain) and new .doodle-icon */
+.feature-icon img.cartoon-icon,
+.feature-icon img.doodle-icon { /* Updated to include .doodle-icon */
+    width: 45px;  /* Or adjust if SVGs are designed for a different size */
+    height: 45px; /* Or adjust if SVGs are designed for a different size */
+    /* Removed fill and stroke properties, as SVGs will manage their own colors */
+    object-fit: contain; /* Ensures SVGs scale nicely if their viewbox aspect ratio differs */
 }
 
 

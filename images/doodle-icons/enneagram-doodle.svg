@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="45" height="45">
+  <circle cx="25" cy="25" r="18" fill="#FFF0E1" stroke="black" stroke-width="1.5"/>
+  <!-- 9 dots -->
+  <circle cx="25" cy="7" r="2" fill="#FF8C69"/>
+  <circle cx="38.8" cy="14.2" r="2" fill="#AEC6CF"/> <!-- approx 40 deg -->
+  <circle cx="41" cy="25" r="2" fill="#C1E1C1"/> <!-- 90 deg from top, actually side -->
+  <circle cx="38.8" cy="35.8" r="2" fill="#FFD1DC"/> <!-- approx 140 deg -->
+  <circle cx="25" cy="43" r="2" fill="#FFFACD"/> <!-- 180 deg -->
+  <circle cx="11.2" cy="35.8" r="2" fill="#D8BFD8"/> <!-- approx 220 deg -->
+  <circle cx="9" cy="25" r="2" fill="#FFDAB9"/> <!-- 270 deg from top, actually side -->
+  <circle cx="11.2" cy="14.2" r="2" fill="#B0E0E6"/> <!-- approx 320 deg -->
+  <circle cx="25" cy="25" r="2" fill="#778899"/> <!-- center for style -->
+  <!-- Simple internal lines (stylized) -->
+  <path d="M25 7 L11.2 35.8 L38.8 14.2 Z" stroke="#FF8C69" stroke-width="1" fill="none"/>
+</svg>

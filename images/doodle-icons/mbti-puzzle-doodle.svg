@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="45" height="45">
+  <!-- Puzzle Piece 1 -->
+  <path d="M10 15 H20 V10 H25 V15 H30 V25 H25 V30 H20 V25 H10 Z" fill="#AEC6CF" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Puzzle Piece 2 (interlocking) -->
+  <path d="M23 23 H33 V18 H38 V23 H43 V33 H38 V38 H33 V33 H23 Z" fill="#C1E1C1" stroke="black" stroke-width="1.5" stroke-linejoin="round" transform="translate(0, 2)"/>
+</svg>

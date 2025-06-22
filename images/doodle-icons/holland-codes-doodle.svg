@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="45" height="45">
+  <!-- Friendly Toolbox -->
+  <rect x="10" y="20" width="30" height="18" rx="3" fill="#D2B48C" stroke="black" stroke-width="1.5"/>
+  <rect x="18" y="12" width="14" height="8" rx="2" fill="#BDC3C7" stroke="black" stroke-width="1.5"/> <!-- Handle -->
+  <!-- Tiny symbols for RIASEC (stylized) -->
+  <path d="M15 25 L18 28 L15 31" fill="#FF8C69" stroke="black" stroke-width="0.5"/> <!-- R - tool shape -->
+  <circle cx="25" cy="26" r="2" stroke="black" stroke-width="1" fill="#AEC6CF"/> <!-- I - magnify -->
+  <path d="M32 25 Q35 22 35 28" fill="none" stroke="black" stroke-width="1"/> <!-- A - swirl/art -->
+  <path d="M16 35 L18 33 L20 35 Z" fill="#C1E1C1" stroke="black" stroke-width="0.5"/> <!-- S - people/heart -->
+  <path d="M25 35 L23 32 L27 32 Z" fill="#FFFACD" stroke="black" stroke-width="0.5"/> <!-- E - arrow up -->
+  <rect x="30" y="32" width="4" height="4" fill="#FFD1DC" stroke="black" stroke-width="0.5"/> <!-- C - square/order -->
+</svg>

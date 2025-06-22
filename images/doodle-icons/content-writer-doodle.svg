@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="45" height="45">
+  <!-- Quill -->
+  <path d="M15 35 Q30 20 40 10 C35 25 30 30 15 35 Z" fill="#E0E0E0" stroke="black" stroke-width="1.5"/>
+  <line x1="28" y1="22" x2="18" y2="32" stroke="black" stroke-width="1"/> <!-- Quill Line -->
+  <!-- Paper -->
+  <rect x="8" y="10" width="20" height="25" rx="2" fill="#FFF0E1" stroke="black" stroke-width="1.5" transform="rotate(-10 18 22.5)"/>
+  <line x1="12" y1="18" x2="22" y2="16" stroke="#BDC3C7" stroke-width="1" transform="rotate(-10 18 22.5)"/>
+  <line x1="12" y1="23" x2="25" y2="21" stroke="#BDC3C7" stroke-width="1" transform="rotate(-10 18 22.5)"/>
+</svg>

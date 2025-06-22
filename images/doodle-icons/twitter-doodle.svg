@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="45" height="45">
+  <rect x="5" y="5" width="40" height="40" rx="10" ry="10" fill="#AEC6CF" stroke="black" stroke-width="1.5"/>
+  <path d="M15 35 Q20 25 25 28 Q30 20 38 22 M18 25 Q25 30 35 18" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Simplified bird shape -->
+   <path d="M38,15 C36,17 33,18 30,17 C33,14 35,11 36,8 C33,10 30,11 27,11 C24,8 20,8 17,11 C14,14 13,18 14,22 C10,21 7,19 5,15 C5,15 3,20 6,24 C4,23 3,22 3,22 C3,27 6,30 10,31 C9,31 8,31 7,30 C8,34 11,36 15,36 C12,38 9,39 6,38 C10,41 15,42 20,41 C29,34 34,26 34,18 C34,17.5 34,17 34,16.5 C36,15 37,14 38,13Z"
+   transform="scale(0.8) translate(8, 5)" fill="white" stroke="none"/>
+</svg>

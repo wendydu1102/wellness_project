@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="45" height="45">
+  <!-- Heart -->
+  <path d="M25 15 C 18 10, 10 18, 10 25 C 10 35, 25 42, 25 42 C 25 42, 40 35, 40 25 C 40 18, 32 10, 25 15 Z" fill="#FFD1DC" stroke="black" stroke-width="1.5"/>
+  <!-- Plus Sign -->
+  <line x1="20" y1="28" x2="30" y2="28" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="25" y1="23" x2="25" y2="33" stroke="white" stroke-width="3.5" stroke-linecap="round"/>
+</svg>
