@@ -308,18 +308,76 @@
                 <p id="no-results-message" class="text-center mt-medium" style="display:none;">Oops! No careers match
                     that. Try another keyword?</p>
 
-                <div class="dive-deeper-section section-padding bg-light text-center"
-                    style="margin-top: 50px; border-radius: 15px;">
-                    <h2 class="section-title" style="font-size: 2rem; margin-bottom: 1rem;">Want to Dive Deeper?</h2>
-                    <p class="section-intro" style="font-size: 1.1rem; margin-bottom: 2rem;">
-                        Pathfinder gives you a friendly start! For super detailed info on job duties, salaries,
-                        education paths, and local opportunities, check out our friends at CareerOneStop. They're an
-                        awesome official resource!
+                <!-- New Spotlight Section -->
+                <section class="spotlight-section section-padding" style="padding-top: 60px; padding-bottom: 30px;">
+                    <h2 class="section-title text-center">Spotlight on In-Demand Careers</h2>
+                    <p class="section-intro text-center">Here are a few examples of careers that often have good
+                        prospects. Curious about salary or what it takes to get there? CareerOneStop has the details!
                     </p>
-                    <a href="https://www.careeronestop.org/ExploreCareers/explore-careers.aspx" target="_blank"
+                    <div class="features-grid">
+                        <!-- Using features-grid for layout consistency, but cards won't be filterable -->
+                        <div class="feature-card"> <!-- No 'career-card' class -->
+                            <div class="feature-icon">
+                                <img src="https://img.icons8.com/plasticine/100/000000/maintenance.png"
+                                    alt="Cartoon Maintenance/Tools Icon" class="cartoon-icon" />
+                            </div>
+                            <h3>Elevator & Escalator Technician</h3>
+                            <p>Keep people moving smoothly and safely by installing and fixing elevators and escalators.
+                                It's an uplifting job!</p>
+                            <p class="mt-small" style="font-size: 0.85rem; color: #718096;"><em>Salary & outlook details
+                                    on CareerOneStop!</em></p>
+                        </div>
+                        <div class="feature-card"> <!-- No 'career-card' class -->
+                            <div class="feature-icon">
+                                <img src="https://img.icons8.com/plasticine/100/000000/electricity.png"
+                                    alt="Cartoon Electricity Icon" class="cartoon-icon" />
+                            </div>
+                            <h3>Power Line Installer & Repairer</h3>
+                            <p>Be a hero of the power grid! Install and maintain the lines that bring electricity to
+                                homes and businesses.</p>
+                            <p class="mt-small" style="font-size: 0.85rem; color: #718096;"><em>Salary & outlook details
+                                    on CareerOneStop!</em></p>
+                        </div>
+                        <div class="feature-card"> <!-- No 'career-card' class -->
+                            <div class="feature-icon">
+                                <img src="https://img.icons8.com/plasticine/100/000000/construction-site.png"
+                                    alt="Cartoon Construction Site Icon" class="cartoon-icon" />
+                            </div>
+                            <h3>Crane & Tower Operator</h3>
+                            <p>Operate mighty machines to lift and move heavy materials on construction sites. Reach for
+                                the sky!</p>
+                            <p class="mt-small" style="font-size: 0.85rem; color: #718096;"><em>Salary & outlook details
+                                    on CareerOneStop!</em></p>
+                        </div>
+                    </div>
+                </section>
+                <!-- End New Spotlight Section -->
+
+
+                <div class="dive-deeper-section section-padding bg-light text-center"
+                    style="margin-top: 30px; border-radius: 15px;">
+                    <h2 class="section-title" style="font-size: 2rem; margin-bottom: 1rem;">Explore Detailed Career Data
+                        on CareerOneStop</h2>
+                    <p class="section-intro" style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                        Pathfinder gives you a friendly introduction! For a deep dive into career information, our
+                        friends at <strong>CareerOneStop</strong> (sponsored by the U.S. Department of Labor) offer
+                        amazing tools. You can:
+                    </p>
+                    <ul
+                        style="list-style-type: disc; margin-left: 40px; text-align: left; margin-bottom: 2rem; display: inline-block;">
+                        <li>See lists like "Highest-Paying Careers" or "Fastest-Growing Careers".</li>
+                        <li>Filter career information by your state or education level.</li>
+                        <li>Find detailed wage data (hourly and annual estimates).</li>
+                        <li>Learn about typical job duties, required education, and job outlook.</li>
+                        <li>Watch career videos and download helpful reports.</li>
+                    </ul>
+                    <p class="section-intro" style="font-size: 1.1rem; margin-bottom: 2rem;">
+                        It's a fantastic resource for serious career planning!
+                    </p>
+                    <a href="https://www.careeronestop.org/Toolkit/Careers/career-exploration.aspx" target="_blank"
                         rel="noopener noreferrer" class="btn btn-primary"
                         style="font-size: 1.1rem; padding: 15px 35px;">
-                        Explore on CareerOneStop &rarr;
+                        Explore Tools on CareerOneStop &rarr;
                     </a>
                 </div>
 
@@ -367,6 +425,7 @@
         const careerSearchInput = document.getElementById('career-search');
         const categoryFilterSelect = document.getElementById('category-filter');
         const careersGrid = document.getElementById('careers-grid');
+        // IMPORTANT: Only select cards that are meant to be filtered.
         const careerCards = Array.from(careersGrid.getElementsByClassName('career-card'));
         const noResultsMessage = document.getElementById('no-results-message');
 
@@ -375,7 +434,7 @@
             const selectedCategory = categoryFilterSelect.value;
             let resultsFound = false;
 
-            careerCards.forEach(card => {
+            careerCards.forEach(card => { // This loop now correctly targets only filterable 'career-card' elements
                 const title = card.querySelector('h3').textContent.toLowerCase();
                 const description = card.querySelector('p').textContent.toLowerCase();
                 const category = card.dataset.category;
