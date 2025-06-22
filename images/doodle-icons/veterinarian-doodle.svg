@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="45" height="45">
+  <!-- Paw Print -->
+  <ellipse cx="25" cy="20" rx="7" ry="5" fill="#D2B48C" stroke="black" stroke-width="1.5"/>
+  <circle cx="18" cy="13" r="3" fill="#D2B48C" stroke="black" stroke-width="1"/>
+  <circle cx="25" cy="11" r="3" fill="#D2B48C" stroke="black" stroke-width="1"/>
+  <circle cx="32" cy="13" r="3" fill="#D2B48C" stroke="black" stroke-width="1"/>
+  <!-- Heart -->
+  <path d="M25 30 C 20 28, 18 32, 18 35 C 18 39, 25 42, 25 42 C 25 42, 32 39, 32 35 C 32 32, 30 28, 25 30 Z" fill="#FFD1DC" stroke="black" stroke-width="1.5"/>
+</svg>

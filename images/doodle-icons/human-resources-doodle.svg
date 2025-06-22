@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="45" height="45">
+  <!-- Three people icons (simplified) -->
+  <circle cx="15" cy="20" r="5" fill="#AEC6CF" stroke="black" stroke-width="1"/>
+  <path d="M10 35 Q15 25 20 35 Z" fill="#AEC6CF" stroke="black" stroke-width="1" stroke-linejoin="round"/>
+
+  <circle cx="25" cy="15" r="5" fill="#C1E1C1" stroke="black" stroke-width="1"/>
+  <path d="M20 30 Q25 20 30 30 Z" fill="#C1E1C1" stroke="black" stroke-width="1" stroke-linejoin="round"/>
+
+  <circle cx="35" cy="20" r="5" fill="#FFDAB9" stroke="black" stroke-width="1"/>
+  <path d="M30 35 Q35 25 40 35 Z" fill="#FFDAB9" stroke="black" stroke-width="1" stroke-linejoin="round"/>
+  <!-- Speech bubble/connection -->
+  <path d="M18 28 Q25 35 32 28" fill="none" stroke="#FF8C69" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
