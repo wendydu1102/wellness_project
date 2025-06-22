@@ -10,10 +10,12 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.7;
+    color: #5D5C61;
+    /* Warm Dark Gray */
+    background-color: #FFFBF5;
+    /* Soft Cream/Peach White */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -30,7 +32,12 @@ ul {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #FF8C69;
+    /* Soft Coral for links */
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Container */
@@ -39,8 +46,8 @@ a {
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Headings */
@@ -50,22 +57,34 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Lora', serif;
-    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
     line-height: 1.3;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
+    color: #4A4A4A;
+    /* Slightly darker gray for headings */
 }
+
+h1.hero-title,
+h1.page-hero-title {
+    /* Specific override for big titles */
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    /* Fredoka One is already bold */
+}
+
 
 h1 {
     font-size: 2.8rem;
 }
 
+/* Default for non-hero H1 */
 h2 {
     font-size: 2.2rem;
 }
 
 h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 @media (max-width: 768px) {
@@ -78,7 +97,7 @@ h3 {
     }
 
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -112,66 +131,71 @@ h3 {
 }
 
 .section-padding {
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 .bg-light {
-    background-color: #f9fafb;
-    /* A very light gray */
+    background-color: #FDF5EF;
+    /* Lighter shade of peach/cream */
 }
 
 .btn {
     display: inline-block;
-    padding: 12px 28px;
-    border-radius: 30px;
-    /* Pill shape */
-    font-weight: 600;
+    padding: 14px 32px;
+    border-radius: 50px;
+    /* Fully rounded pill shape */
+    font-weight: 700;
     font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     cursor: pointer;
-    border: 2px solid transparent;
+    border: none;
+    /* Removing border, will rely on bg and shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary {
-    background-color: #3B82F6;
-    /* Blue */
+    background-color: #FF8C69;
+    /* Soft Coral */
     color: #fff;
-    border-color: #3B82F6;
 }
 
 .btn-primary:hover {
-    background-color: #2563EB;
-    border-color: #2563EB;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #FF7043;
+    /* Slightly darker Coral */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255, 140, 105, 0.4);
 }
 
 .btn-secondary {
-    background-color: #10B981;
-    /* Green */
+    background-color: #87CEEB;
+    /* Soft Sky Blue */
     color: #fff;
-    border-color: #10B981;
 }
 
 .btn-secondary:hover {
-    background-color: #059669;
-    border-color: #059669;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #70B8D8;
+    /* Slightly darker Sky Blue */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(135, 206, 235, 0.4);
 }
 
 .btn-outline {
     background-color: transparent;
-    color: #3B82F6;
-    border-color: #3B82F6;
+    color: #FF8C69;
+    /* Soft Coral */
+    border: 2px solid #FFDAB9;
+    /* Light Peach border */
+    box-shadow: none;
 }
 
 .btn-outline:hover {
-    background-color: #3B82F6;
+    background-color: #FF8C69;
     color: #fff;
+    border-color: #FF8C69;
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 4px 10px rgba(255, 140, 105, 0.2);
 }
 
 /* Accessibility */
@@ -186,62 +210,90 @@ h3 {
     border: 0;
 }
 
-/* Card styles - basic structure to be enhanced in style.css */
+/* Card styles */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
+    gap: 35px;
+    /* Increased gap */
+    margin-top: 50px;
 }
 
 .feature-card {
     background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    padding: 35px 30px;
+    /* Increased padding */
+    border-radius: 20px;
+    /* More rounded */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+    /* Softer shadow */
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 }
 
 .feature-icon {
-    width: 60px;
-    /* Placeholder size, will be replaced by actual icons/images */
-    height: 60px;
-    margin: 0 auto 20px auto;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px auto;
     border-radius: 50%;
-    background-color: #e0e7ff;
-    /* Light blue bg for icon */
+    background-color: #FFF0E1;
+    /* Very light peach for icon background */
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #3B82F6;
 }
 
+/* Cartoon Icon Styling Suggestion - if using inline SVGs or font icons */
+.feature-icon svg,
+.feature-icon img.cartoon-icon {
+    width: 45px;
+    height: 45px;
+    fill: #FF8C69;
+    /* Coral */
+    /* For line icons, use stroke property */
+    /* stroke: #FF8C69; */
+}
+
+
 .feature-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-    color: #1F2937;
-    /* Darker gray for heading */
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #4A5568;
+    /* Darker Gray */
 }
 
 .feature-card p {
     font-size: 0.95rem;
-    color: #4B5563;
-    /* Medium gray for text */
-    margin-bottom: 20px;
+    color: #718096;
+    /* Medium Gray */
+    margin-bottom: 25px;
+    flex-grow: 1;
 }
 
 .card-link {
-    font-weight: 600;
-    color: #3B82F6;
+    font-weight: 700;
+    color: #FF8C69;
+    /* Soft Coral */
     font-size: 0.9rem;
+    font-family: 'Nunito', sans-serif;
+    padding: 8px 15px;
+    border: 1px solid #FFDAB9;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
 
 .card-link:hover {
-    text-decoration: underline;
+    background-color: #FF8C69;
+    color: #fff;
+    text-decoration: none;
+    border-color: #FF8C69;
 }
