@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="45" height="45">
-  <!-- Pencil -->
-  <polygon points="10,35 15,30 30,40 25,45" fill="#FFDAB9" stroke="black" stroke-width="1.5"/>
-  <polygon points="15,30 12,27 27,37 30,40" fill="#F0E68C" stroke="black" stroke-width="1.5"/>
-  <line x1="12" y1="27" x2="10" y2="25" stroke="black" stroke-width="1.5"/> <!-- Tip -->
-  <!-- Swirl -->
-  <path d="M20 10 C 30 5, 40 15, 35 25 S 20 35, 25 20" stroke="#FF8C69" stroke-width="2" fill="none" stroke-linecap="round"/>
-</svg>
